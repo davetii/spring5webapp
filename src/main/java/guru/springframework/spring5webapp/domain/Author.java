@@ -79,4 +79,14 @@ public class Author {
         result = 31 * result + (id != null ? id.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", books=" + books +
+                ", id=" + id +
+                '}';
+    }
 }
